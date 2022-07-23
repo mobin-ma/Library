@@ -1,0 +1,36 @@
+form {
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+form input {
+    width: 50%;
+    min-height: 3rem;
+    background-color: #d7d7d7;
+    border: none;
+    border-radius: 50px;
+    padding: 0 2rem;
+    font-size: 1.5rem;
+}
+
+form button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--title-color);
+    color: #fff;
+    padding: 7px 50px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 2rem;
+    transition: 0.3s ease-in;
+}
+
+form button:hover {
+    background-color: brown;
+}

@@ -1,0 +1,109 @@
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10rem;
+    padding: 1rem 5rem;
+}
+
+.scroll-nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 30px 2px #454545;
+    animation: scroll-nav 1s backwards;
+}
+
+@keyframes scroll-nav {
+    0% {
+        transform: translateY(-70px);
+    }
+}
+
+.nav>:nth-child(1) {
+    flex: 2;
+}
+
+.nav>:nth-child(2) {
+    flex: 2;
+}
+
+.nav__logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+}
+
+.nav__button {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 2rem;
+}
+
+.nav__button i {
+    font-size: 2rem;
+    color: #4c4c4c;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.nav__button i span {
+    background-color: var(--title-color);
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 2px 6.5px;  
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 10px; 
+    right: 4rem; 
+}
+
+i.bxs-moon {
+    transform: rotate(360deg);
+    transition: 1000ms;
+}
+
+i.bxs-sun {
+    transform: rotate(-360deg);
+    transition: 1000ms;
+}
+
+i.bxs-moon:hover {
+    color: gray;
+}
+
+i.bxs-sun:hover {
+    color: #e8c500;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.header__row {
+    background-image: url('../../assets/bg-library.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1200px;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    border-radius: 50px;
+}
+
+.header__row h1 {
+    color: #fff;
+    text-align: center;
+    font-size: 5rem;
+}
